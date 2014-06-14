@@ -5,6 +5,7 @@ install caskroom/cask/brew-cask
 tap caskroom/versions
 
 cask install alfred 2> /dev/null
+cask install bettertouchtool 2> /dev/null
 cask install colloquy 2> /dev/null
 cask install dropbox 2> /dev/null
 cask install fantastical 2> /dev/null
