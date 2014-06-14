@@ -41,6 +41,7 @@ install homebrew/php/php55 --with-gmp
 #install exiv2
 # install foremost
 install git
+install composer
 # install hashpump
 # install imagemagick --with-webp
 # install lynx
