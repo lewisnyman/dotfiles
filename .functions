@@ -244,3 +244,11 @@ function o() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
+
+# Wipe a Drupal site.
+function dwipe() {
+	drush sql-drop -y
+	sudo rm -rf sites/default/files
+	sudo mkdir sites/default/files
+	sudo chmod 777 sites/default/files
+}
