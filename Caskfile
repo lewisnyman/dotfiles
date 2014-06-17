@@ -16,7 +16,8 @@ cask install hipchat 2> /dev/null
 cask install kaleidoscope 2> /dev/null
 cask install imagealpha 2> /dev/null
 cask install imageoptim 2> /dev/null
-cask install iterm2 2> /dev/null
 cask install sublime-text 2> /dev/null
+cask install textexpander 2> /dev/null
+cask install viscosity 2> /dev/null
 cask install virtualbox 2> /dev/null
 cask install vlc 2> /dev/null
