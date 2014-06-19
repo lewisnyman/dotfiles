@@ -12,6 +12,7 @@ cask install fantastical 2> /dev/null
 cask install gitbox 2> /dev/null
 cask install google-chrome 2> /dev/null
 cask install google-chrome-canary 2> /dev/null
+cask install google-hangouts 2> /dev/null
 cask install hipchat 2> /dev/null
 cask install kaleidoscope 2> /dev/null
 cask install imagealpha 2> /dev/null
