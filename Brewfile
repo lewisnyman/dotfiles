@@ -33,7 +33,13 @@ Note that the order in which these are installed is important; see http://git.io
 install vim --override-system-vi
 install homebrew/dupes/grep
 install homebrew/dupes/screen
-install homebrew/php/php55 --with-gmp
+tap homebrew/dupes
+tap josegonzalez/homebrew-php
+install mysql
+install graphviz
+install memcached
+install php53 --with-mysql
+install php53-xhprof php53-xdebug php53-uploadprogress php53-apc php53-memcache
 
 # Install other useful binaries
 # install ack
@@ -58,6 +64,7 @@ install node # This installs `npm` too using the recommended installation method
 # install webkit2png
 # install xpdf
 # install zopfli
+install hub
 
 # install homebrew/versions/lua52
 
