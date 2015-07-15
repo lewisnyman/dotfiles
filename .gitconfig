@@ -138,3 +138,29 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
+
+[user]
+  name = lewisnyman
+  email = hello@lewisnyman.co.uk
+[filter "media"]
+  clean = git media clean %f
+  smudge = git media smudge %f
+  required = true
+[filter "lfs"]
+  clean = git lfs clean %f
+  smudge = git lfs smudge %f
+  required = true
+
+[difftool "Kaleidoscope"]
+  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[diff]
+tool = Kaleidoscope
+[difftool]
+  prompt = false
+
+[credential]
+  username = lewisnyman
+  helper = osxkeychain
+[credential "https://lewis-nyman-tta9.squarespace.com"]
+  username = hello@lewisnyman.co.uk
+  helper = osxkeychain

@@ -252,3 +252,12 @@ function dwipe() {
 	sudo mkdir sites/default/files
 	sudo chmod 777 sites/default/files
 }
+
+# Install a D8 site
+function d8() {
+  cd sites/default/
+  cp default.services.yml services.yml
+  cp default.settings.php settings.php
+  sudo chmod 777 se*
+  cd -
+}

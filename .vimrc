@@ -1,5 +1,5 @@
 " Use the Solarized Dark theme
-set background=dark
+set background=light
 colorscheme solarized
 
 " Make Vim more useful
