@@ -1,2 +1,3 @@
 PHP_PATH="$(brew --prefix php53)/bin"
 export PATH=$PHP_PATH:$HOME/.composer/vendor/bin:$PATH
+export PATH="/usr/local/sbin:$PATH"

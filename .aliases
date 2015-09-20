@@ -150,3 +150,23 @@ alias reload="exec $SHELL -l"
 
 # Faster npm for Europeans
 command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.eu/"
+
+# Patch shortcuts
+#
+# Copy a patch URL to the clipboard, then run one of these commands to download
+# the patch and apply it. Hat tip to @chrisjlee for making me reconsider curl.
+#
+# Apply
+alias cap='curl `pbpaste` | git apply -v'
+# Apply and stage
+alias cape='curl `pbpaste` | git apply -v --index'
+# Apply with `patch`
+alias capp='curl `pbpaste` | patch -p1'
+# Reverse apply
+alias carp='curl `pbpaste` | git apply -Rv'
+# Reverse apply and stage
+alias carpe='curl `pbpaste` | git apply -Rv --index'
+# Verify patch
+alias cav='curl `pbpaste` | git apply -v --check'
+# Verify patch with `patch`
+alias capv='curl `pbpaste` | patch -p1 --dry-run'

@@ -158,9 +158,12 @@ tool = Kaleidoscope
 [difftool]
   prompt = false
 
-[credential]
-  username = lewisnyman
-  helper = osxkeychain
+[mergetool "Kaleidoscope"]
+  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+  trustexitcode = true
+[mergetool]
+  prompt = false
+
 [credential "https://lewis-nyman-tta9.squarespace.com"]
   username = hello@lewisnyman.co.uk
   helper = osxkeychain
