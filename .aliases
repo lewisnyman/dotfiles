@@ -160,6 +160,8 @@ command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.e
 alias cap='curl `pbpaste` | git apply -v'
 # Apply and stage
 alias cape='curl `pbpaste` | git apply -v --index'
+# Apply from branch name and stage
+alias scape="curl https://www.drupal.org/files/issues/$(git rev-parse --abbrev-ref HEAD) | git apply -v --index"
 # Apply with `patch`
 alias capp='curl `pbpaste` | patch -p1'
 # Reverse apply
