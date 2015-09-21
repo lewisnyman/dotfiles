@@ -161,7 +161,7 @@ alias cap='curl `pbpaste` | git apply -v'
 # Apply and stage
 alias cape='curl `pbpaste` | git apply -v --index'
 # Apply from branch name and stage
-alias scape="curl https://www.drupal.org/files/issues/$(git rev-parse --abbrev-ref HEAD) | git apply -v --index"
+alias scape="curl https://www.drupal.org/files/issues/$(git rev-parse --abbrev-ref HEAD) | git apply -v --index && git commit -m \"Patch from $(git rev-parse --abbrev-ref HEAD)\""
 # Apply with `patch`
 alias capp='curl `pbpaste` | patch -p1'
 # Reverse apply
